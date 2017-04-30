@@ -1,4 +1,2 @@
-# Lua-Lanterna
-
-This is a CORONA LUA project for portables.
-
+# plugins-sample-flashlight
+Sample project for Flashlight plugin for Corona SDK.

@@ -1,0 +1,58 @@
+settings = {
+    android =
+    {
+        usesPermissions =
+        {
+            "android.permission.VIBRATE",
+        },
+    },
+	orientation = {
+		default = 'portrait',
+        supported = {'portrait', 'portraitUpsideDown'}
+	},
+	iphone = {
+        plist = {
+			CFBundleIconFile = 'Icon.png',
+			CFBundleIconFiles = {
+				'Icon.png',
+				'Icon@2x.png',
+				'Icon-60.png',
+				'Icon-60@2x.png',
+				'Icon-60@3x.png',
+				'Icon-72.png',
+				'Icon-72@2x.png',
+				'Icon-76.png',
+				'Icon-76@2x.png',
+				'Icon-Small.png',
+				'Icon-Small@2x.png',
+				'Icon-Small@3x.png',
+				'Icon-Small-40.png',
+				'Icon-Small-40@2x.png',
+				'Icon-Small-50.png',
+				'Icon-Small-50@2x.png'
+			}
+		}
+	},
+	plugins = {
+        ["plugin.flashlight"] = 
+		{
+		publisherId = 'com.spiralcodestudio',
+		supportedPlatforms = { android=true }
+		},
+		["plugin.google.play.services"] =
+        {
+          publisherId = "com.coronalabs",
+          supportedPlatforms = { android=true }
+        },
+        ["shared.android.support.v4"] =
+        {
+          publisherId = "com.coronalabs",
+          supportedPlatforms = { android=true }
+        },
+        ["plugin.coronaAds"] =
+        {
+          publisherId = "com.coronalabs",
+          supportedPlatforms = { iphone=true, android=true }
+        }		
+    }
+}
